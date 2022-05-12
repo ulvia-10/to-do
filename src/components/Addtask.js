@@ -14,7 +14,7 @@ const Addtask = ({tambahTask}) => {
       return
     }
 
-    tambahTask({isi, tanggal, reminder })
+    tambahTask({isi, tanggal, reminder})
 
     setIsi('')
     setTanggal('')

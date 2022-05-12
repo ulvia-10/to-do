@@ -28,11 +28,11 @@ function App() {
   ])
 
 
-
   const addingTask = (tgs) =>{
     const id = Math.floor(Math.random() * 10000) + 1 //untuk set id 
     const newTask = {id, ...tgs} //membuat task baru dari input form 
-    setTugas(...tugas , newTask)
+   setTugas([...tugas , newTask])
+   console.log(newTask)
   } 
 
 
@@ -46,11 +46,11 @@ function App() {
       <div className="header"> My Todo List </div>
       <div className="card">
         {/* <Button/> */}
-     
+        <Addtask tambahTask={addingTask}/>
         {tugas.length > 0 ? (
           <Tasks key={tugas.id}
           tugas={tugas} Ondelete={deleteTask}/>) : (" Yey! Tidak ada Task ")}
-          <Addtask tambahTask={addingTask}/>
+         
       </div>
 
     </div>

@@ -6,12 +6,13 @@
   padding: 0;
 
 }
-@media only screen and (min-width: 200px){
-  
+@media only screen and (max-width: 5000px){
 body{
   font-family: 'Poppins', sans-serif;
   background-color: #b38db8;
   font-weight: bold;
+}
+
 }
 
 .header{
@@ -27,9 +28,9 @@ body{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 35%;
-  height: 500px;
+  height: 700px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 5px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -38,21 +39,18 @@ body{
   font-size: 0.9em;
   border-radius: 20px;
   opacity: 80%;
-  
 }
 
 .list{
-
-  padding: 10px;
+  padding: 20px;
   width: 80%;
   background-color: #FFF;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  margin: -50px;
-  margin-top: 30px;
+  margin: -150px;
+  margin-top: -250px;
   border-radius: 10px;
-  margin-left: 30px;
-
+  margin-left: 40px;
 }
 
 .btn-add{
@@ -84,7 +82,6 @@ body{
   border-radius: 10px;
   margin: 0 auto;
   flex-wrap: wrap;
-
 }
 
 .form-control{
@@ -94,9 +91,10 @@ body{
 
 }
 
-.form-control-checkbox:input{
-display: flex;
-justify-content: space-between;
-align-items: flex-end;
-}
+input[type=checkbox] {
+  visibility:visible;
+  margin-left: 25%;
+
+
+
 }

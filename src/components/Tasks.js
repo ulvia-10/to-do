@@ -6,7 +6,7 @@ const Tasks = (props) => {
     <div className="list">
     <div key = {list.id}>
         <div className="agenda"> Agenda: {list.isi}
-         <FaTimes style={{color: 'black'  }}
+         <FaTimes style={{color: 'black' }}
         onClick={()=>props.Ondelete(list.id)}/></div> 
         <div> Tanggal: {list.tanggal}</div>
     </div>
